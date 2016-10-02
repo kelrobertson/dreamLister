@@ -19,6 +19,7 @@ class itemCell: UITableViewCell {
         title.text = item.title
         price.text = "$\(item.price)"
         details.text = item.details
+        thumbnail.image = item.toImage?.image as? UIImage
     }
 
 }
